@@ -5,31 +5,10 @@ import { SearchInput } from "./components/Molucules/SearchInput";
 import { UserCard } from "./components/Organism/UserCard";
 import { DefaultLayout } from "./components/templates/DefaultLayout";
 import { HeaderOnly } from "./components/templates/HeaderOnly";
+import { Router } from "./router/Router";
 
 import "./styles.css";
 
 export default function App() {
-  const user = {
-    name: "じゃけえ",
-    image: "https://source.unsplash.com/NE0XGVKTmcA",
-    alt: "プロフィール",
-    mail: "aaa@sss.com",
-    tel: "000-1111-2222",
-    company: {
-      name: "あああ会社"
-    },
-    web: "heeee.com"
-  };
-
-  return (
-    <BrowserRouter>
-      <DefaultLayout>
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>検索</SecondaryButton>
-        <br />
-        <SearchInput />
-        <UserCard user={user} />
-      </DefaultLayout>
-    </BrowserRouter>
-  );
+  return <Router />;
 }
