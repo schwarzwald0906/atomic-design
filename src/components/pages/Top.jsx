@@ -12,7 +12,7 @@ export const Top = () => {
     history.push("/users");
   };
   const onClickGeneral = () => {
-    setUserInfo({ isAdmin: true });
+    setUserInfo({ isAdmin: false });
     history.push("/users");
   };
   return (
